@@ -82,30 +82,75 @@ body
 //Banner
 .content-block-1
   background: url('../images/background_banner.jpg') no-repeat
-  min-height: 1276px 
-.slogan-first
-  margin: 30px 0 
-.slogan-first-text
-  display: inline-block
-  font-family: $font-champagne
-  font-size: 48px
-  text-transform: $text-transform
-  color: #fff
-  padding: 10px 15px
-  border-top: 3px solid #fff
-  border-bottom: 3px solid #fff
-  background: rgba(0,0,0,0.5)
-.slogan-second
-  line-height: 62px
-.slogan-second-text
-  display: inline-block
-  font-size: 62px
-  color: #281a1e
-  background: rgba(255,255,255,0.74)
-  i
-    font-size: 28px
-
-
+  +clearfix
+  .slogan-first
+    margin: 30px 0
+    float: left
+  .slogan-first-text
+    display: inline-block
+    font-family: $font-champagne
+    font-size: 48px
+    text-transform: $text-transform
+    color: #fff
+    padding: 10px 15px
+    border-top: 3px solid #fff
+    border-bottom: 3px solid #fff
+    background: rgba(0,0,0,0.5)
+  .slogan-second
+    float: left
+    clear: both
+    margin-bottom: 60px
+  .slogan-second-text
+    display: inline-block
+    font-size: 62px
+    color: #281a1e
+    background: rgba(255,255,255,0.74)
+    i
+      font-size: 28px
+  .form-block
+    float: left
+    clear: both
+    background: rgba(0,0,0,0.5)
+    padding: 20px 10px
+    border: 3px solid #fff
+    +border-radius(24px)
+    .input-wrapp
+      position: relative
+      .form-wrapp-input
+        width: 400px
+        padding: 10px
+        margin-bottom: 30px
+        background: rgba(228,225,226,0.74)
+        font-size: 24px
+        line-height: 26px
+        font-family: $font-champagne
+        text-transform: $text-transform
+        +border-radius(6px)
+        &::-moz-placeholder
+          color: #261418
+        &::-webkit-input-placeholder
+          color: #261418
+    .input-wrapp::after
+      content: ''
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 16px 25px 0 0
+      border-color: rgba(228,225,226,0.74) transparent transparent transparent
+      position: absolute
+      bottom: 14px
+      left: 15px
+    .form-btn
+      float: right
+      padding: 5px 10px
+      background: rgba(228,225,226,0.74)
+      font-size: 24px
+      line-height: 26px
+      font-family: $font-champagne
+      text-transform: $text-transform
+      +border-radius(6px)
+  .logo-block
+    text-align: center
 //End banner
 
 //Footer
