@@ -8,5 +8,70 @@ body
   display: flex
   flex-direction: column
 .main
-  width: 1000px
+  width: 1200px
   margin: $margin_center
+*
+  box-sizing: border-box
+//--- Header ---//
+
+.header
+  background: #f0727d
+  border-bottom: 3px solid #ffffff
+  line-height: 80px
+.header-nav
+  ul
+    +clearfix
+    li
+      float: left
+      color: #fff
+      font-size: 26px
+      &::after
+        content: ''
+        display: block
+        width: 
+      a
+        color: #fff
+        padding: 10px
+        line-height: 26px
+        border: 3px solid transparent
+        position: relative
+        &::before
+          content: ''
+          display: none
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 11px 9px 0 9px
+          border-color: #000000 transparent transparent transparent
+          position: absolute
+          bottom: -11px
+          left: 50%
+          margin-left: -9px
+          z-index: 1
+        &::after
+          content: ''
+          display: none
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 8px 6px 0 6px
+          border-color: #ffffff transparent transparent transparent
+          position: absolute
+          bottom: -8px
+          left: 50%
+          margin-left: -6px
+          z-index: 2
+        &:hover
+          background: #fff
+          color: #f0727d
+          border: 3px solid #261418
+          @include border-radius(10px)
+          &::after
+            content: ''
+            display: block
+          &::before
+            content: ''
+            display: block
+
+
+//--- End Header ---//
