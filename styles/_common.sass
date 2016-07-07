@@ -15,6 +15,7 @@ body
   font-size: 60px
   text-align: center
   color: #ff727c
+  margin: 20px 0
 
 
 //Header
@@ -155,6 +156,32 @@ body
     text-align: center
 //End Header
 
+//Review
+.content-block-7
+  background-color: #ff727c
+  height: 500px
+  margin-top: 51px
+  position: relative
+  .main-title
+    color: $bg-base
+  &:before
+    content: ''
+    position: absolute
+    background: url(../images/reviews_before.png) no-repeat
+    height: 51px
+    width: 100%
+    top: -51px
+  &:after
+    content: ''
+    position: absolute
+    background: url(../images/reviews_after.png) no-repeat
+    height: 96px
+    width: 100%
+    bottom: -96px
+
+
+.content-block-8
+  margin-top: 96px
 //Questions
 .content-block-9
   padding: 30px 0
