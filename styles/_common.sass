@@ -78,3 +78,46 @@ body
             display: block
 
 //End Header
+
+//Footer
+.footer
+  background-color: #ff727c
+  padding: 50px 0
+.footer-col-wrap
+  display: flex
+  flex-direction: row
+  +clearfix
+  .footer-col
+    flex: 1
+    padding: 0 15px
+    font-size: 30px
+    font-family: $font-champagne
+    text-align: center
+    +box-sizing(border-box)
+    .footer-link
+      display: block
+      color: #261418
+    &:before
+      content: ''
+      display: block
+      float: left
+      margin-right: 10px
+  .footer-col:first-child
+    flex: 1 8%
+  .footer-col:nth-child(2)
+    padding: 0 40px
+    flex: 1 9%
+  .footer-col:nth-child(3)
+    text-align: left
+    flex: 2
+  .footer-col-phone
+    &:before
+      background: url(../images/footer_phone.png) no-repeat
+      height: 98px
+      width: 81px
+  .footer-col-mail
+    &:before
+      margin-right: 20px
+      background: url(../images/footer_mail.png) no-repeat
+      height: 37px
+      width: 55px
