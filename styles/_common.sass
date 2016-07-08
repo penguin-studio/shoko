@@ -84,7 +84,7 @@ body
 
 //Banner
 .content-block-1
-  background: url('../images/background_banner.jpg') no-repeat
+  background: url('../images/background_banner.jpg') no-repeat center
   background-size: cover
   padding-bottom: 64px
   +clearfix
@@ -196,7 +196,7 @@ body
 .content-block-2::before
   content: ''
   position: absolute
-  background: url(../images/advantages_before.png) no-repeat
+  background: url(../images/advantages_before.png) no-repeat center
   height: 64px
   width: 100%
   top: -64px
@@ -229,14 +229,14 @@ body
   &:before
     content: ''
     position: absolute
-    background: url(../images/shares_before.png) no-repeat
+    background: url(../images/shares_before.png) no-repeat center
     height: 40px
     width: 100%
     top: -40px
   &:after
     content: ''
     position: absolute
-    background: url(../images/shares_after.png) no-repeat
+    background: url(../images/shares_after.png) no-repeat center
     height: 83px
     width: 100%
   .main-title
@@ -344,6 +344,55 @@ body
   width: 380px
   margin: 0 auto
 //End How we do
+
+//Sale
+.content-block-5
+  background: #ff727c
+  position: relative
+  margin: 47px 0 100px
+  &::before
+    content: ''
+    position: absolute
+    background: url(../images/order_before.png) no-repeat center
+    height: 47px
+    width: 100%
+    top: -47px
+  &::after
+    content: ''
+    position: absolute
+    background: url(../images/order_after.png) no-repeat center
+    height: 100px
+    width: 100%
+    bottom: -100px
+.sale-block
+  flex: 1
+.sale-block-image
+  height: 420px
+  +flexbox
+  justify-content: center
+  align-items: flex-end
+  margin-bottom: 20px
+  position: relative
+  .sale-block-link_mail
+    display: block
+    text-align: center
+    width: 415px
+    height: 58px
+    background: url('../images/order_mail.png') no-repeat
+    transform: rotate(-90deg)
+    font-size: 36px
+    color: #261418
+    font-family: $font-nickainley
+    position: absolute
+    left: -175px
+    top: 200px
+.sale-block-text
+  text-align: center
+  font-size: 42px
+  color: #fff
+  width: 370px
+  margin: 0 auto
+//End Sale
 
 //Review
 .content-block-7
