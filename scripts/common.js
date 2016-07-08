@@ -19,4 +19,9 @@
     $(".lSNext").click(function(){
         textSlider.goToNextSlide();
     });
+    $('.WorkSlider').lightSlider({
+        item: 3,
+        pager: false,
+        autoWidth: true
+    });
 })();
