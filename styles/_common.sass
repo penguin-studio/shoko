@@ -221,7 +221,7 @@ body
 
 //End Advantages
 
-//We do
+//What we do
 .content-block-3
   background: #ff727c
   position: relative
@@ -283,8 +283,67 @@ body
     width: 320px
     margin: 0 auto 30px
 
+//End What we do
 
-//End We do
+//How we do
+.how_do-row1
+  margin-top: -75px
+  position: relative
+  &::before
+    content: ''
+    width: 160px
+    height: 33px
+    background: url('../images/job_arrow.png') no-repeat
+    position: absolute
+    top: 40%
+    left: 50%
+    margin-left: -80px
+  &::after
+    content: ''
+    width: 160px
+    height: 33px
+    background: url('../images/job_arrow.png') no-repeat
+    position: absolute
+    bottom: 12%
+    left: 50%
+    margin-left: -80px
+.how_do-row2
+  position: relative
+  margin-bottom: 40px
+  &::before
+    content: ''
+    width: 160px
+    height: 33px
+    background: url('../images/job_arrow.png') no-repeat
+    position: absolute
+    top: 40%
+    left: 50%
+    margin-left: -80px
+    transform: rotate(180deg)
+  &::after
+    content: ''
+    width: 160px
+    height: 33px
+    background: url('../images/job_arrow.png') no-repeat
+    position: absolute
+    top: 30px
+    right: 30px
+    transform: scaleX(-1) rotate(80deg)
+.how_do-block
+  flex: 1
+.how_do-block-image
+  height: 440px
+  +flexbox
+  justify-content: center
+  align-items: flex-end
+  margin-bottom: 20px
+.how_do-block-text
+  text-align: center
+  font-size: 42px
+  color: #f0727d
+  width: 380px
+  margin: 0 auto
+//End How we do
 
 //Review
 .content-block-7
