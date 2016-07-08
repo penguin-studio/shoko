@@ -105,11 +105,29 @@ body
     clear: both
     margin-bottom: 60px
     background: rgba(255,255,255,0.74)
-  .slogan-second-text
-    font-size: 62px
-    color: #281a1e
-    .slogan-star
-      font-size: 28px
+    position: relative
+    margin-left: 35px
+    &::before
+      content: ''
+      display: inline-block
+      position: absolute
+      left: -35px
+      top: 0
+      width: 35px
+      height: 60px
+      background: url('../images/sprite_title.png') no-repeat 0 0
+    &::after
+      content: ''
+      display: inline-block
+      position: absolute
+      right: -35px
+      top: 0
+      width: 35px
+      height: 60px
+      background: url('../images/sprite_title.png') no-repeat -35px 0
+    .slogan-second-text
+      font-size: 62px
+      color: #281a1e
   .form-block
     float: left
     clear: both
