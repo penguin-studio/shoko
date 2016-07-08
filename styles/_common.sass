@@ -85,6 +85,8 @@ body
 //Banner
 .content-block-1
   background: url('../images/background_banner.jpg') no-repeat
+  background-size: cover
+  padding-bottom: 64px
   +clearfix
   .slogan-first
     margin: 30px 0
@@ -185,6 +187,39 @@ body
     font-size: 30px
     color: #281a1e
     font-family: $font-nickainley
+.content-block-2
+  position: relative
+  .main-title
+    clear: both
+    max-width: 60%
+    margin: 0 auto
+.content-block-2::before
+  content: ''
+  position: absolute
+  background: url(../images/advantages_before.png) no-repeat
+  height: 64px
+  width: 100%
+  top: -64px
+.flex-wrap
+  +flexbox
+  flex-wrap: wrap
+  .flex-block
+    flex: 1
+    position: relative
+    +clearfix
+    .advantages-img
+      width: 100%
+      padding-left: 20px
+      position: absolute
+      top: -75px
+.advantages-camera
+  float: left
+  margin-bottom: 10px
+.advantages-video
+  clear: both
+  margin-bottom: 150px
+
+
 //End Advantages
 
 //Review
