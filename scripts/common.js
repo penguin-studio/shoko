@@ -4,6 +4,7 @@
 (function(){
 	$('.RevSlider').lightSlider({
         item: 5,
-        slideMargin: 0
+        slideMargin: 0,
+        pager: false
     });
 })();
