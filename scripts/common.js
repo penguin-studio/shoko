@@ -7,4 +7,16 @@
         slideMargin: 0,
         pager: false
     });
+    var textSlider = $('.RevSlider2').lightSlider({
+       item: 1,
+        slideMargin: 0,
+        pager: false,
+        controls: false
+    });
+    $(".lSPrev").click(function(){
+        textSlider.goToPrevSlide();
+    });
+    $(".lSNext").click(function(){
+        textSlider.goToNextSlide();
+    });
 })();
