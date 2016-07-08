@@ -217,10 +217,74 @@ body
   margin-bottom: 10px
 .advantages-video
   clear: both
-  margin-bottom: 150px
-
+  margin-bottom: 155px
 
 //End Advantages
+
+//We do
+.content-block-3
+  background: #ff727c
+  position: relative
+  margin: 40px 0 83px
+  &:before
+    content: ''
+    position: absolute
+    background: url(../images/shares_before.png) no-repeat
+    height: 40px
+    width: 100%
+    top: -40px
+  &:after
+    content: ''
+    position: absolute
+    background: url(../images/shares_after.png) no-repeat
+    height: 83px
+    width: 100%
+  .main-title
+    color: #fff
+  .what_do-block
+    flex: 1
+    text-align: center
+  .what_do-block__title
+    font-size: 42px
+    color: #f3e8df
+    margin-bottom: 70px
+    position: relative
+  .left_after::after
+    content: ''
+    width: 217px
+    height: 67px
+    background: url('../images/shares_img-left_after.png') no-repeat
+    position: absolute
+    left: 50%
+    margin-left: -115px
+    bottom: -38px
+  .center_after::after
+    content: ''
+    width: 344px
+    height: 102px
+    background: url('../images/shares_img-center_after.png') no-repeat
+    position: absolute
+    left: 50%
+    margin-left: -172px
+    bottom: -70px
+  .right_after::after
+    content: ''
+    width: 217px
+    height: 84px
+    background: url('../images/shares_img-right_after.png') no-repeat
+    position: absolute
+    left: 50%
+    margin-left: -109px
+    bottom: -48px
+  .what_do-block__text
+    font-size: 32px
+    font-family: $font-champagne
+    color: #fffcfd
+    width: 320px
+    margin: 0 auto 30px
+
+
+//End We do
 
 //Review
 .content-block-7
