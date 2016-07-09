@@ -366,11 +366,32 @@ body
   background: url(../images/slider_iphone.png) no-repeat center
   height: 843px
   margin: 0 auto
+  position: relative
 .WorkSlider
   padding-top: 140px
   div
     text-align: center
     width: 382px
+.WSControlLeft
+  width: 57px
+  height: 57px
+  background-image: url(../images/controls_work.png)
+  margin-top: -29px
+  background-position: 0 0
+  position: absolute
+  left: -60px
+  top: 50%
+  cursor: pointer
+.WSControlRight
+  width: 57px
+  height: 57px
+  background-image: url(../images/controls_work.png)
+  margin-top: -29px
+  background-position: -57px 0
+  position: absolute
+  right: -25px
+  top: 50%
+  cursor: pointer
 
 //Sale
 .content-block-5
@@ -462,6 +483,9 @@ body
     img
       width: 50%
       height: 100%
+  .lSAction > a
+    background-image: url('../images/controls.png')
+
 
 .content-block-8
   margin-top: 96px
